@@ -1,3 +1,4 @@
+// Added like/dislike support - Suraj
 // src/components/CommentSection.jsx
 import React, { useState } from "react";
 import { ThumbsUp, ThumbsDown, ChevronDown, ChevronUp, Send } from "lucide-react";
