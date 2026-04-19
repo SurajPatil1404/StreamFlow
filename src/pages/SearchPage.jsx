@@ -1,3 +1,4 @@
+// Updated by Suraj - Added filtering logic
 // src/pages/SearchPage.jsx
 import React, { useMemo } from "react";
 import { useSearchParams, Link } from "react-router-dom";
