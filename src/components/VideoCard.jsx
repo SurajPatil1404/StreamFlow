@@ -1,3 +1,4 @@
+// Updated by Prithviraj - Added grid/list variants support
 // src/components/VideoCard.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
