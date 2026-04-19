@@ -1,3 +1,4 @@
+// Enhanced with horizontal scroll chips - Suraj
 // src/components/CategoryFilter.jsx
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
