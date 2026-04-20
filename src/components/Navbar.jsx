@@ -1,3 +1,4 @@
+// Updated by Prithviraj - Added search bar and dark mode toggle
 // src/components/Navbar.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
