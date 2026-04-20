@@ -257,7 +257,7 @@ Licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-Built with ❤️ by **Team StreamFlow** — SPPU College Project 2026
+Built with ❤️ by **Team StreamFlow** — [Newton School Of Technology - Pune] College Project 2026
 
 *Suraj · Prithviraj · Onkar*
 
