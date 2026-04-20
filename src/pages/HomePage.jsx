@@ -1,3 +1,4 @@
+// Updated by Suraj - Added hero banner and improved video grid responsiveness
 // src/pages/HomePage.jsx
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
