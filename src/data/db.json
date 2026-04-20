@@ -1,0 +1,39 @@
+{
+  "videos": [
+    {
+      "id": "v1",
+      "title": "React JS Full Course",
+      "channel": "Dave Gray",
+      "category": "React",
+      "views": "1.4M",
+      "duration": "9:00:46",
+      "youtubeId": "w7ejDZ8SWv8"
+    },
+    {
+      "id": "v2",
+      "title": "Learn Python Full Course",
+      "channel": "freeCodeCamp",
+      "category": "Python",
+      "views": "34M",
+      "duration": "4:26:52",
+      "youtubeId": "rfscVS0vtbw"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "videoId": "v1",
+      "user": "Arjun Sharma",
+      "text": "Best tutorial ever!",
+      "likes": 42
+    },
+    {
+      "id": 2,
+      "videoId": "v1",
+      "user": "Priya Mehta",
+      "text": "Very helpful, thank you!",
+      "likes": 28
+    }
+  ],
+  "history": []
+}
