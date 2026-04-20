@@ -1,3 +1,4 @@
+// AppContext - Global state: theme, history, focusMode, notifications
 // Enhanced by Onkar - Added focusMode and darkMode state management
 // src/context/AppContext.jsx
 import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
