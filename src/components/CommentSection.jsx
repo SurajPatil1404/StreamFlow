@@ -83,7 +83,7 @@ export default function CommentSection({ videoId }) {
 
       {expanded && (
         <div className="space-y-5 animate-fade-in">
-          {/* New comment input */}
+          {/* Improved New Comment Input - Prithviraj | April 22 */}
           <div className="flex gap-3">
             <img
               src="https://api.dicebear.com/7.x/initials/svg?seed=YO&backgroundColor=00f5bb"
@@ -95,25 +95,31 @@ export default function CommentSection({ videoId }) {
                 value={newComment}
                 onChange={(e) => setNewComment(e.target.value)}
                 onFocus={() => setFocused(true)}
-                placeholder="Add a comment..."
+                placeholder="Share your thoughts on this video..."
                 rows={focused ? 3 : 1}
-                className="w-full resize-none bg-transparent border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-brand-500 outline-none text-sm py-1 transition-all duration-200 text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400"
+                maxLength={500}
+                className="w-full resize-none bg-zinc-50 dark:bg-zinc-800/50 border-2 border-zinc-200 dark:border-zinc-700 focus:border-brand-500 focus:bg-white dark:focus:bg-zinc-900 rounded-xl outline-none text-sm p-3 transition-all duration-200 text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400"
               />
               {focused && (
-                <div className="flex justify-end gap-2 mt-2 animate-fade-in">
-                  <button
-                    onClick={() => { setFocused(false); setNewComment(""); }}
-                    className="px-3 py-1.5 text-sm text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors rounded-lg"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    onClick={handleSubmit}
-                    disabled={!newComment.trim()}
-                    className="flex items-center gap-1.5 px-4 py-1.5 bg-brand-500 text-white text-sm rounded-xl font-semibold disabled:opacity-40 hover:bg-brand-600 transition-all duration-200"
-                  >
-                    <Send size={13} /> Comment
-                  </button>
+                <div className="flex items-center justify-between mt-2 animate-fade-in">
+                  <span className={`text-xs ${newComment.length > 450 ? 'text-orange-500 font-medium' : 'text-zinc-400'}`}>
+                    {newComment.length}/500 characters
+                  </span>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => { setFocused(false); setNewComment(""); }}
+                      className="px-4 py-2 text-sm text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors rounded-lg"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      onClick={handleSubmit}
+                      disabled={!newComment.trim()}
+                      className="flex items-center gap-2 px-5 py-2 bg-brand-500 text-white text-sm rounded-xl font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-brand-600 hover:shadow-md transition-all duration-200"
+                    >
+                      <Send size={14} /> Post Comment
+                    </button>
+                  </div>
                 </div>
               )}
             </div>
