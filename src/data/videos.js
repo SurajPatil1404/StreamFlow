@@ -1,6 +1,8 @@
-// videos.js - Static video data with YouTube IDs
-// Author: Onkar | Branch: feat/onkar-data
-// Updated by Onkar - Added 12 sample videos with tags and YouTube IDs for StreamFlow
+// 🔧 Video Metadata Fixes - Onkar | April 23
+// - Fixed mismatched thumbnail URLs
+// - Added quality metadata for all videos
+// - Ensured consistent field structure across all video objects
+
 // src/data/videos.js
 // Static video data — uses real YouTube IDs so the embedded player works
 
@@ -27,6 +29,8 @@ export const videos = [
       "Learn React JS in this complete all-in-one beginner tutorial. We'll cover everything from JSX, components, state, props to hooks and context API. Perfect for anyone starting with React.",
     likes: 42000,
     subscribers: "340K",
+    quality: "1080p", // Added April 23
+    isHD: true // Added April 23
   },
   {
     id: "v2",
@@ -45,6 +49,8 @@ export const videos = [
       "This course will give you a full introduction into all of the core concepts in Python. Follow along with the videos and you'll be a Python programmer in no time!",
     likes: 890000,
     subscribers: "8.3M",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v3",
@@ -63,6 +69,8 @@ export const videos = [
       "Learn Machine Learning in this full course for beginners. You'll learn the fundamental concepts and algorithms behind ML including supervised learning, neural networks, and more.",
     likes: 110000,
     subscribers: "8.3M",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v4",
@@ -81,6 +89,8 @@ export const videos = [
       "Learn how to use TypeScript with React. This tutorial covers all TypeScript fundamentals you need to build type-safe React applications from scratch.",
     likes: 28000,
     subscribers: "620K",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v5",
@@ -99,6 +109,8 @@ export const videos = [
       "Harvard University's CS50 – the world's most popular introduction to computer science and programming. Topics include abstraction, algorithms, data structures, web development, and more.",
     likes: 230000,
     subscribers: "8.3M",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v6",
@@ -117,6 +129,8 @@ export const videos = [
       "State management is one of the most confusing topics in React. In this video I break down all the different options including useState, useReducer, Context API, and Redux.",
     likes: 18400,
     subscribers: "1.1M",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v7",
@@ -135,6 +149,8 @@ export const videos = [
       "This Python for Data Science course will teach you everything you need to know to get started with data science using Python. Covers NumPy, Pandas, Matplotlib, and Machine Learning.",
     likes: 175000,
     subscribers: "8.3M",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v8",
@@ -142,7 +158,8 @@ export const videos = [
     title: "Git and GitHub for Beginners – Crash Course",
     channel: "freeCodeCamp",
     channelAvatar: "https://api.dicebear.com/7.x/initials/svg?seed=FC&backgroundColor=006e54",
-    thumbnail: `https://i.ytimg.com/vi/RGOj5yH7evk/hqdefault.jpg`,
+    // 🔧 FIXED: Thumbnail now matches youtubeId (was incorrectly using RGOj5yH7evk)
+    thumbnail: `https://i.ytimg.com/vi/ysEN5RaKOlA/hqdefault.jpg`,
     views: "4.2M",
     viewCount: 4200000,
     duration: "1:08:29",
@@ -153,6 +170,8 @@ export const videos = [
       "Learn the basics of Git and GitHub in this crash course for beginners. This video covers the key concepts of version control and how to use them in real projects.",
     likes: 120000,
     subscribers: "8.3M",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v9",
@@ -171,6 +190,8 @@ export const videos = [
       "Ace your system design interview with this step-by-step framework. I'll walk you through how to approach any system design question confidently and systematically.",
     likes: 33000,
     subscribers: "490K",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v10",
@@ -189,6 +210,8 @@ export const videos = [
       "This complete 134-part JavaScript tutorial for beginners will teach you everything you need to know to get started with the JavaScript programming language.",
     likes: 380000,
     subscribers: "8.3M",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v11",
@@ -207,6 +230,8 @@ export const videos = [
       "Learn full stack web development in this complete course for beginners. We'll cover HTML, CSS, JavaScript, Node.js, Express, and MongoDB to build complete web applications.",
     likes: 68000,
     subscribers: "8.3M",
+    quality: "1080p",
+    isHD: true
   },
   {
     id: "v12",
@@ -214,7 +239,8 @@ export const videos = [
     title: "Docker Tutorial for Beginners – A Full DevOps Course",
     channel: "TechWorld with Nana",
     channelAvatar: "https://api.dicebear.com/7.x/initials/svg?seed=TN&backgroundColor=008c6a",
-    thumbnail: `https://i.ytimg.com/vi/3c-iBn73dDE/hqdefault.jpg`,
+    // 🔧 FIXED: Thumbnail now matches youtubeId (was incorrectly using 3c-iBn73dDE)
+    thumbnail: `https://i.ytimg.com/vi/8hly31xKli0/hqdefault.jpg`,
     views: "3.4M",
     viewCount: 3400000,
     duration: "3:17:19",
@@ -225,6 +251,8 @@ export const videos = [
       "Docker Tutorial for Beginners — a complete, hands-on course covering Docker concepts, commands, containerization, Docker Compose, and how Docker fits into a DevOps workflow.",
     likes: 95000,
     subscribers: "980K",
+    quality: "1080p",
+    isHD: true
   },
 ];
 
