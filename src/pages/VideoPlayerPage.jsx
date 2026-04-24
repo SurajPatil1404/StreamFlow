@@ -1,3 +1,4 @@
+// 🏁 Final Mobile Polish - Suraj | April 25
 // 🔧 Mobile Responsiveness Fixes - Suraj | April 23
 // src/pages/VideoPlayerPage.jsx
 import React, { useState, useEffect } from "react";
