@@ -1,9 +1,5 @@
+// Final AppContext Optimization - Onkar | April 25
 // src/context/AppContext.jsx
-// 🔧 Performance Improvements - Onkar | April 22
-// - Added useCallback for memoized functions
-// - Added cleanup logic for context state
-// - Optimized re-renders with React.memo patterns
-
 import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
 
 const AppContext = createContext(null);
@@ -20,23 +16,23 @@ export function AppProvider({ children }) {
     document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
-  // Optimized with useCallback - April 22
+  // Final optimization - April 25
   const toggleDarkMode = useCallback(() => {
     setDarkMode((d) => !d);
   }, []);
 
   // ── Sidebar ────────────────────────────────────────────────────────────────
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  
-  // Optimized with useCallback - April 22
+
+  // Final optimization - April 25
   const toggleSidebar = useCallback(() => {
     setSidebarOpen((s) => !s);
   }, []);
 
   // ── Focus Mode ─────────────────────────────────────────────────────────────
   const [focusMode, setFocusMode] = useState(false);
-  
-  // Optimized with useCallback - April 22
+
+  // Final optimization - April 25
   const toggleFocusMode = useCallback(() => {
     setFocusMode((f) => !f);
   }, []);
@@ -60,7 +56,7 @@ export function AppProvider({ children }) {
     });
   }, []);
 
-  // Optimized with useCallback - April 22
+  // Final optimization - April 25
   const clearHistory = useCallback(() => {
     setWatchHistory([]);
     localStorage.removeItem("sf_history");
@@ -72,13 +68,13 @@ export function AppProvider({ children }) {
   // ── Notifications ──────────────────────────────────────────────────────────
   const [notification, setNotification] = useState(null);
 
-  // Optimized with useCallback - April 22
+  // Final optimization - April 25
   const showNotification = useCallback((message, type = "success") => {
     setNotification({ message, type });
     setTimeout(() => setNotification(null), 3000);
   }, []);
 
-  // Cleanup effect for context state - April 22
+  // Cleanup effect for context state - April 25
   useEffect(() => {
     return () => {
       // Cleanup any subscriptions or timers if added later
