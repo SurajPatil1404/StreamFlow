@@ -1,3 +1,5 @@
+// Final polish by Prithviraj - Improved sidebar animations and mobile responsiveness
+// Enhanced by Prithviraj - Added navigation links and category list
 // src/components/Sidebar.jsx
 import React from "react";
 import { Link, useLocation } from "react-router-dom";

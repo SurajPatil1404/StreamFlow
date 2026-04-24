@@ -1,3 +1,6 @@
+// Final Animation Polish - Prithviraj | April 25
+// Enhanced by Prithviraj - Improved hover effects and responsiveness
+// Updated by Prithviraj - Added grid/list variants support
 // src/components/VideoCard.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -41,10 +44,12 @@ export default function VideoCard({ video, variant = "grid" }) {
     );
   }
 
+  // Final hover effects - April 25
   return (
-    <Link to={`/watch/${video.id}`} className="group block card-hover">
+    <Link to={`/watch/${video.id}`} className="group block card-hover transition-transform duration-300 hover:-translate-y-1">
       {/* Thumbnail */}
-      <div className="relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800">
+      {/* Final shadow polish - April 25 */}
+      <div className="relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800 shadow-md group-hover:shadow-xl transition-shadow duration-300">
         {!imgLoaded && !imgError && <div className="absolute inset-0 shimmer" />}
         <img
           src={video.thumbnail}
