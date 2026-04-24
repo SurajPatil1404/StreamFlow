@@ -1,8 +1,4 @@
-// 🔧 Video Metadata Fixes - Onkar | April 23
-// - Fixed mismatched thumbnail URLs
-// - Added quality metadata for all videos
-// - Ensured consistent field structure across all video objects
-
+// Final Metadata Polish - Onkar | April 25
 // src/data/videos.js
 // Static video data — uses real YouTube IDs so the embedded player works
 
@@ -29,8 +25,8 @@ export const videos = [
       "Learn React JS in this complete all-in-one beginner tutorial. We'll cover everything from JSX, components, state, props to hooks and context API. Perfect for anyone starting with React.",
     likes: 42000,
     subscribers: "340K",
-    quality: "1080p", // Added April 23
-    isHD: true // Added April 23
+    quality: "1080p", // Added April 25
+    isHD: true // Added April 25
   },
   {
     id: "v2",
