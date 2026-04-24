@@ -1,3 +1,4 @@
+// Updated by Suraj - Added filtering logic
 // src/pages/SearchPage.jsx
 import React, { useMemo } from "react";
 import { useSearchParams, Link } from "react-router-dom";
@@ -61,15 +62,30 @@ export default function SearchPage() {
       )}
 
       {results.length === 0 ? (
-        <div className="flex flex-col items-center justify-center min-h-[50vh] text-center">
-          <div className="text-6xl mb-4">🔍</div>
-          <h2 className="text-xl font-bold text-zinc-800 dark:text-zinc-200 mb-2">No results found</h2>
-          <p className="text-zinc-500 text-sm mb-6 max-w-xs">
-            We couldn't find anything for "{query}". Try different keywords or browse by category.
+        <div className="flex flex-col items-center justify-center min-h-[50vh] text-center px-4">
+          <div className="text-7xl mb-6">🔍</div>
+          <h2 className="text-2xl font-bold text-zinc-800 dark:text-zinc-200 mb-3">No results found</h2>
+          <p className="text-zinc-500 text-base mb-2 max-w-md">
+            We couldn't find anything for "<span className="font-semibold text-zinc-700 dark:text-zinc-300">{query}</span>"
           </p>
+          <p className="text-zinc-400 text-sm mb-8">Try different keywords or explore these categories:</p>
+          
+          {/* Suggested categories - April 22 */}
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            {["React", "Python", "JavaScript", "Machine Learning", "Web Development"].map((cat) => (
+              <Link
+                key={cat}
+                to={`/?cat=${cat}`}
+                className="px-4 py-2 rounded-full text-sm bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20 hover:bg-brand-500/20 transition-all"
+              >
+                {cat}
+              </Link>
+            ))}
+          </div>
+          
           <Link
             to="/"
-            className="px-6 py-3 bg-brand-500 text-white rounded-xl font-semibold hover:bg-brand-600 transition-colors"
+            className="px-8 py-3 bg-brand-500 text-white rounded-xl font-semibold hover:bg-brand-600 hover:shadow-lg transition-all"
           >
             Browse All Videos
           </Link>
