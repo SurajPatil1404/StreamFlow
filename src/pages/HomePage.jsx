@@ -1,3 +1,5 @@
+// Final Hero Polish - Suraj | April 25
+// Updated by Suraj - Added hero banner and improved video grid responsiveness
 // src/pages/HomePage.jsx
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
@@ -26,7 +28,7 @@ export default function HomePage() {
   return (
     <div className="animate-fade-in">
       {/* Hero banner */}
-      <div className="relative mb-8 rounded-2xl overflow-hidden bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 dark:from-zinc-900 dark:to-zinc-800 p-6 md:p-8">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-brand-500/10 via-zinc-100 to-zinc-200 dark:from-brand-900/20 dark:via-zinc-900 dark:to-zinc-950 p-6 sm:p-10 mb-8 shadow-xl border border-zinc-200 dark:border-zinc-800">
         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 30% 50%, #00d9a3 0%, transparent 60%), radial-gradient(circle at 80% 20%, #14b8a6 0%, transparent 50%)" }} />
         <div className="relative z-10">
           <div className="flex items-center gap-2 mb-2">

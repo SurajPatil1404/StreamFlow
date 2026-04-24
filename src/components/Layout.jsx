@@ -1,3 +1,4 @@
+// Refactored by Prithviraj - Integrated Navbar + Sidebar wrapper
 // src/components/Layout.jsx
 import React from "react";
 import { useApp } from "../context/AppContext";

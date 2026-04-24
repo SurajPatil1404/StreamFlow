@@ -1,3 +1,5 @@
+// 🏁 Final Responsive Fix - Prithviraj | April 25
+// Updated by Prithviraj - Added search bar and dark mode toggle
 // src/components/Navbar.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -26,7 +28,8 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-16 glass border-b border-zinc-200 dark:border-zinc-800">
-      <div className="flex items-center h-full px-4 gap-4">
+      {/* Final mobile spacing - April 25 */}
+      <div className="flex items-center h-full px-2 sm:px-4 gap-2 sm:gap-4">       
         {/* Left — hamburger + logo */}
         <div className="flex items-center gap-3 min-w-0">
           <button
