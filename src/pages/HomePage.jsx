@@ -1,3 +1,4 @@
+// Final Hero Polish - Suraj | April 25
 // Updated by Suraj - Added hero banner and improved video grid responsiveness
 // src/pages/HomePage.jsx
 import React, { useState, useEffect } from "react";
