@@ -98,7 +98,7 @@ export default function VideoPlayerPage() {
           {/* Responsive video embed - April 23 */}
           <div className="aspect-video w-full bg-black rounded-xl overflow-hidden shadow-lg sm:shadow-xl ring-1 ring-zinc-200 dark:ring-zinc-800">
             <iframe
-              src={`https://www.youtube.com/embed/${video.videoId}?autoplay=1&rel=0`}
+              src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&rel=0`}
               title={video.title}
               className="w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -209,7 +209,7 @@ export default function VideoPlayerPage() {
                 <div className="flex gap-2 items-start">
                   <div className="relative w-40 aspect-video shrink-0 rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-800">
                     <img 
-                      src={`https://img.youtube.com/vi/${v.videoId}/mqdefault.jpg`} 
+                      src={`https://img.youtube.com/vi/${v.youtubeId}/mqdefault.jpg`} 
                       alt={v.title} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
