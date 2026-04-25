@@ -312,7 +312,7 @@ Built with ❤️ by **Team StreamFlow**
 
 **Newton School of Technology — Pune | College Project 2026**
 
-[Suraj Patil](https://github.com/SurajPatil1404) · [Prithviraj](https://github.com/prithviraj-1657) · [Onkar](https://github.com/onkarswamii)
+[Suraj Patil](https://github.com/SurajPatil1404) · [Prithviraj Ghorpade](https://github.com/prithviraj-1657) · [Onkar Swami](https://github.com/onkarswamii)
 
 🚀 **[View Live Project](https://stream-flow-jet.vercel.app/)**
 
