@@ -8,9 +8,12 @@
 [![Vite](https://img.shields.io/badge/Vite-5.1-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-38BDF8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 [![React Router](https://img.shields.io/badge/React_Router-6.22-CA4245?style=flat-square&logo=reactrouter)](https://reactrouter.com/)
+[![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)](https://stream-flow-jet.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 **A YouTube-inspired smart video learning platform with Focus Mode, Watch History Analytics, and Smart Recommendations.**
+
+### 🚀 [Live Demo → https://stream-flow-jet.vercel.app/](https://stream-flow-jet.vercel.app/)
 
 </div>
 
@@ -18,22 +21,24 @@
 
 ## 👨‍💻 Team
 
-| Member | Role | Branch |
-|---|---|---|
-| **Suraj Patil** | Pages & Routing Lead | `feat/suraj-pages` |
-| **Prithviraj** | UI Components Lead | `feat/prithviraj-ui` |
-| **Onkar** | Data & Context Lead | `feat/onkar-data` |
+| Member | Role | Branch | GitHub |
+|---|---|---|---|
+| **Suraj Patil** | Pages & Routing Lead | `feat/suraj-pages` | [@SurajPatil1404](https://github.com/SurajPatil1404) |
+| **Prithviraj** | UI Components Lead | `feat/prithviraj-ui` | [@prithviraj-1657](https://github.com/prithviraj-1657) |
+| **Onkar** | Data & Context Lead | `feat/onkar-data` | [@onkarswamii](https://github.com/onkarswamii) |
 
 ---
 
 ## 📌 Table of Contents
 
 - [About](#-about-the-project)
+- [Live Demo](#-live-demo)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Folder Structure](#-folder-structure)
 - [Getting Started](#-getting-started)
 - [Pages Overview](#-pages-overview)
+- [Deployment](#-deployment)
 - [Git Workflow](#-git-workflow)
 - [Viva Preparation](#-viva-preparation)
 - [Future Scope](#-future-scope)
@@ -52,6 +57,17 @@
 - A **Watch History Dashboard** with real learning analytics
 - **Smart Recommendations** based on content similarity
 - Persistent **Dark/Light Mode** for comfortable long study sessions
+
+---
+
+## 🌐 Live Demo
+
+> **Deployed on Vercel — No installation needed!**
+
+| | |
+|---|---|
+| 🔗 **Live URL** | [https://stream-flow-jet.vercel.app/](https://stream-flow-jet.vercel.app/) |
+| 📦 **Repository** | [https://github.com/SurajPatil1404/StreamFlow](https://github.com/SurajPatil1404/StreamFlow) |
 
 ---
 
@@ -89,6 +105,7 @@
 | **Context API** | built-in | Global state (theme, history, focus mode, notifications) |
 | **React Hooks** | built-in | useState, useEffect, useContext, useCallback, useMemo, useRef |
 | **Lucide React** | 0.363 | Icon library |
+| **Vercel** | — | Deployment and hosting |
 
 ---
 
@@ -134,11 +151,17 @@ streamflow/
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 🌐 Option 1 — Use Live Demo (Easiest)
+Visit directly → **[https://stream-flow-jet.vercel.app/](https://stream-flow-jet.vercel.app/)**
+No installation needed!
+
+### 💻 Option 2 — Run Locally
+
+#### Prerequisites
 - **Node.js** v18+ → [nodejs.org](https://nodejs.org)
 - **Git** → [git-scm.com](https://git-scm.com)
 
-### Installation & Run
+#### Installation & Run
 
 ```bash
 # 1. Clone the repository
@@ -156,7 +179,7 @@ npm run dev
 
 Open your browser → **http://localhost:5173**
 
-### Production Build
+#### Production Build
 
 ```bash
 npm run build
@@ -181,6 +204,24 @@ Filters across title, channel, category, tags, and description + related categor
 
 ---
 
+## ☁️ Deployment
+
+This project is deployed on **Vercel** with automatic deployments on every push to `main`.
+
+| Environment | URL |
+|---|---|
+| 🟢 **Production** | [https://stream-flow-jet.vercel.app/](https://stream-flow-jet.vercel.app/) |
+
+### How We Deployed
+1. Pushed final code to GitHub `main` branch
+2. Connected GitHub repository to Vercel
+3. Vercel auto-detected Vite + React configuration
+4. Build command: `npm run build`
+5. Output directory: `dist`
+6. Auto-deploys on every push to `main` ✅
+
+---
+
 ## 🌿 Git Workflow
 
 ```
@@ -194,7 +235,8 @@ main
 - ❌ No direct pushes to `main`
 - ✅ Each member worked on their own feature branch
 - ✅ Pull Requests used to merge into `main`
-- ✅ Each member committed every single day
+- ✅ Each member committed every day (April 18–24)
+- ✅ Project deployed live on Vercel
 
 ---
 
@@ -234,6 +276,15 @@ const score = sharedTags.length + (sameCategory ? 2 : 0);
 ### ❓ Q7: What is the folder structure and why?
 > We separated code into `components/` (reusable UI), `pages/` (one per route), `context/` (global state), and `data/` (static data). This follows the separation of concerns principle — each folder has one clear responsibility, making the codebase easy to navigate and maintain.
 
+### ❓ Q8: How did your team collaborate?
+> We used Git Feature Branch Workflow. Each member had their own branch — Suraj owned pages, Prithviraj owned UI components, and Onkar owned data and context. We committed daily and merged via Pull Requests. The project is deployed live on Vercel at stream-flow-jet.vercel.app.
+
+### ❓ Q9: What makes StreamFlow different from YouTube?
+> Three key differences:
+> 1. **Focus Mode** — removes all distractions instantly
+> 2. **Learning Analytics** — tracks watch time, categories, and streak
+> 3. **Smart Recommendations** — based on content similarity not engagement bait
+
 ---
 
 ## 🔮 Future Scope
@@ -257,8 +308,12 @@ Licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-Built with ❤️ by **Team StreamFlow** — [Newton School Of Technology - Pune] College Project 2026
+Built with ❤️ by **Team StreamFlow**
 
-*Suraj · Prithviraj · Onkar*
+**Newton School of Technology — Pune | College Project 2026**
+
+[Suraj Patil](https://github.com/SurajPatil1404) · [Prithviraj](https://github.com/prithviraj-1657) · [Onkar](https://github.com/onkarswamii)
+
+🚀 **[View Live Project](https://stream-flow-jet.vercel.app/)**
 
 </div>
